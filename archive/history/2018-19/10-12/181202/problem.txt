@@ -1,0 +1,12 @@
+2018年第18期（12月第2周）
+“下周”所指时间段为2018年12月10日00:00:00—12月16日23:59:59（UTC）
+
+1. 判断题：下周JMA对热带系统预报的24小时内最大风力比温带气旋的低。（**下周JMA未给热带系统作出此类预报则回答0）
+2. 请预测下周CMA在台风公报/全球热带气旋监测公报/北印度洋热带气旋公报中评定的最低气压。（a=1, k=1.008, 未评定则回答0）
+3. 请预测下周JTWC的德法分析中，会出现：
+a. THIS SYSTEM IS TOO WEAK TO CLASSIFY.（必须写明） b. LLCC COULD NOT BE FOUND. c. DVORAK VALUES UNAVAILABLE DUE TO LLCC INLAND. d. DT0.0且FT≥1.0 e. STT: D1.0或W1.0/XXHRS f. 下周JTWC根本没有分析
+4. 请预测下周某时刻FNMOC在编系统数目的最小值。（当然，可以是no active storm=0）
+5. 请预测下周JTWC定位的最南纬度。（含各类偷改，南纬用负数表示，下周空扰则回答-90）
+6. 根据http://bbs.typhoon.org.cn/read.php?tid=59252，请预测下周JTWC评定的气压与对应表的值之差的绝对值的最大值。（±1计12%，含各类偷改）
+
+回答示例：n/0/a/1/-22.3/2

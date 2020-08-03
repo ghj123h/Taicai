@@ -1,0 +1,13 @@
+“下周”所指的时间段为10月8日00:00:00—10月14日23:59:59（UTC）
+
+1. 请预测下周IMD定强的最高等级（no/wmlpa/d/dd/cs/scs/vscs/escs/sucs）
+2. 请预测下周JMA天气图上最多会有多少个“L”（含LPA）（a=k=1）
+3. 请预测下周TCFA的数目。（别忘了NHC辖区也有TCFA，±1计14%）
+4. 请预测下周ADT给出的最高眼温。（没有回答no，两位小数，k=0.4）
+5. 请预测Sergio以热带性质在下周到达的最北纬度。（一位小数，k=4/9）
+6. 请预测下周SSD的德法分析中，会出现：
+a. OVERLAND b. TOO WEAK c. EXTRATROPICAL d. SUBTROPICAL e. 给还没编号的云团分析 f. 一个都木有
+
+回答示例：
+escs/9/2/17.78/43.6/a
+vscs/6/3/-0.13/37.3/abe
