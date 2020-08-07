@@ -67,6 +67,7 @@ namespace TaicaiLib
                     np.Deviation = Math.Sqrt(theAnswers.Sum(x => (x - _aver) * (x - _aver)) / (theAnswers.Count - 1));
                     var selected = theAnswers.Where(x => Math.Abs(x - _aver) <= 3 * np.Deviation).ToList();
                     // Console.WriteLine(np.Deviation);
+                    _aver = selected.Average();
                     np.Deviation = Math.Sqrt(selected.Sum(x => (x - _aver) * (x - _aver)) / (selected.Count - 1));
                 }
                 for (int j = 0; j < n; j++)
