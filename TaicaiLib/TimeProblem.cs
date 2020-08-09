@@ -41,7 +41,7 @@ namespace TaicaiLib
             {
                 return 0;
             }
-            double score = CND(-Math.Min(Math.Abs(_answer - _key), 86400 - Math.Abs(_answer - _key)) / Deviation);
+            double score = CND(-Math.Min(Math.Abs(_answer - _key), 86400 - Math.Abs(_answer - _key)) / Deviation) * 2 * FullScore;
             if (Key.Length == 6 && answer[5] == Key[5] && answer[4] == Key[4])
             {
                 score += FullScore / 13;
