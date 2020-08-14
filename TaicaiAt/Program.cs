@@ -13,7 +13,7 @@ namespace TaicaiAt
         {
             Regex rans = new Regex(@"\[(?<name>.+?),\s+(?<answer>.+?)\]");
             string raw = File.ReadAllText("atlist.txt");
-            List<string> atlist = raw.Split("@ \n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries).ToList(), anslist = new List<string>();
+            List<string> atlist = raw.Split("@ \r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries).ToList(), anslist = new List<string>();
             for (int i = 0; i < 2; i++)
             {
                 var children = new DirectoryInfo(Console.ReadLine());
