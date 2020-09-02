@@ -52,7 +52,7 @@ namespace TaicaiLib
     [Serializable]
     public class NumberNoDotProblem : NumberProblem
     {
-        public double FullScoreWithDot { get; set; }
+        public double FullScoreWithoutDot { get; set; }
         public NumberNoDotProblem(double key, double fullScore = 1.5)
                : base(key, fullScore)
         {
@@ -67,7 +67,7 @@ namespace TaicaiLib
                     throw new FormatException();
                 }
             };
-            FullScoreWithDot = fullScore;
+            FullScoreWithoutDot = fullScore;
         }
 
         public virtual double GetScoreWithoutDot(string answer)
