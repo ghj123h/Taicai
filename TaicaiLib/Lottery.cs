@@ -50,13 +50,6 @@ namespace TaicaiLib
                     {
                         try
                         {
-                            if (np is NumberNoDotProblem)
-                            {
-                                if (this[j].answers[i].TheAnswer.Contains("."))
-                                {
-                                    throw new FormatException();
-                                }
-                            }
                             theAnswers.Add(np.Transformation(this[j].answers[i].TheAnswer));
                         }
                         catch (Exception)

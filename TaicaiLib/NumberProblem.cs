@@ -55,7 +55,34 @@ namespace TaicaiLib
         public NumberNoDotProblem(double key, double fullScore = 1.5)
                : base(key, fullScore)
         {
+            Transformation = s =>
+            {
+                if (s.Contains("."))
+                {
+                    return double.Parse(s);
+                }
+                else
+                {
+                    throw new FormatException();
+                }
+            };
+        }
 
+        public virtual double GetScoreWhereNoDot(string answer)
+        {
+            return 0;
+        }
+
+        public override double GetScore(string answer)
+        {
+            if (answer.Contains("."))
+            {
+                return base.GetScore(answer);
+            }
+            else
+            {
+                return GetScoreWhereNoDot(answer);
+            }
         }
     }
 }
