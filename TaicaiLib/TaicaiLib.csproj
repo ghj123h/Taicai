@@ -41,10 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Answer.cs" />
+    <Compile Include="DecimalProblem.cs" />
     <Compile Include="DefaultProblem.cs" />
     <Compile Include="Lottery.cs" />
     <Compile Include="MultipleProblem.cs" />
     <Compile Include="NumberProblem.cs" />
+    <Compile Include="NumbersProblem.cs" />
     <Compile Include="OffsetProblem.cs" />
     <Compile Include="OffsetsProblem.cs" />
     <Compile Include="Problem.cs" />

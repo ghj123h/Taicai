@@ -6,17 +6,27 @@ using System.Threading.Tasks;
 
 namespace TaicaiLib
 {
+    /// <summary>
+    /// 表示多选题。
+    /// </summary>
     [Serializable]
     public class MultipleProblem : DefaultProblem
     {
         private bool flag;
 
+        /// <summary>
+        /// 用指定的答案、作答方式和满分初始化 <see cref="MultipleProblem"/> 的新实例。
+        /// </summary>
+        /// <param name="key">题目的答案。</param>
+        /// <param name="flag">如果作答中选项之间以-为分隔，则为 true；如果选项均为单个字母且作答为直接组合，则为 false。</param>
+        /// <param name="fullScore">题目的满分。</param>
         public MultipleProblem(string key, bool flag = false, double fullScore = 1.25)
             : base(key, fullScore)
         {
             this.flag = flag;
         }
 
+        /// <inheritdoc />
         public override double GetScore(string answer)
         {
             if (!flag)

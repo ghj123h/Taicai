@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace TaicaiLib
 {
+    /// <summary>
+    /// 表示答案为 HHMM 或 HHMMSS 格式时间的题目。
+    /// </summary>
     [Serializable]
     public class TimeProblem : NumberProblem
     {
+        /// <summary>
+        /// 用指定的答案和满分初始化 <see cref="TimeProblem"/> 的新实例。
+        /// </summary>
+        /// <param name="key">题目的答案。</param>
+        /// <param name="fullScore">题目的得分。</param>
         public TimeProblem(string key, double fullScore = 1.5)
             : base(Time2Number(key), fullScore)
         {
@@ -16,6 +24,11 @@ namespace TaicaiLib
             Transformation = Time2Number;
         }
 
+        /// <summary>
+        /// 将一个 HHMM 或 HHMMSS 格式的时间转化为一天中的秒数。
+        /// </summary>
+        /// <param name="time">要转换的 HHMM 或 HHMMSS 格式时间。</param>
+        /// <returns>与 <paramref name="time"/> 对应的秒数。若 <paramref name="time"/> 不是一个有效的时间，返回 -1。</returns>
         public static double Time2Number(string time)
         {
             if (time.Length < 4) return -1;
@@ -34,6 +47,7 @@ namespace TaicaiLib
             }
         }
 
+        /// <inheritdoc />
         public override double GetScore(string answer)
         {
             double _answer = Time2Number(answer);
