@@ -18,7 +18,7 @@ namespace TaicaiLib
         /// <param name="key">题目的答案。</param>
         /// <param name="fullScore">题目的得分。</param>
         public TimeProblem(string key, double fullScore = 1.5)
-            : base(Time2Number(key), fullScore)
+            : base(Time2Number(key).ToString(), fullScore)
         {
             Key = key;
             Transformation = Time2Number;
